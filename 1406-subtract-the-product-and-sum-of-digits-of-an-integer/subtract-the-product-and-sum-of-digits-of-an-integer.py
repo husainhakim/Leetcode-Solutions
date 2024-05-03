@@ -5,5 +5,6 @@ class Solution:
         for i in str(n):
             multiple*=int(i)
             sumofnum+=int(i)
+            
         return multiple-sumofnum
 
