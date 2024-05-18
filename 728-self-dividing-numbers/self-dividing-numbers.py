@@ -1,6 +1,6 @@
 class Solution:
     def selfDividingNumbers(self, left: int, right: int) -> List[int]:
-        list1=[]
+        List=[]
         count=0
         for i in range(left,right+1):
             count=0
@@ -10,8 +10,8 @@ class Solution:
                 if j!=0 and i%j==0:
                     count+=1
             if count==len(s):
-                list1.append(i)
-        return list1
+                List.append(i)
+        return List
 
         
 
