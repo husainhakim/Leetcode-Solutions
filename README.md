@@ -66,7 +66,7 @@ To use the solutions in this repository:
 If you have any questions, suggestions, or just want to connect, feel free to reach out:
 
 - **GitHub**: [husainhakim](https://github.com/husainhakim)
-- **Email**: your-email@example.com
+- **Email**: 2023.husainh@isu.ac.in
 
 ---
 
