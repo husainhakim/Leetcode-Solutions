@@ -1,6 +1,6 @@
-# LeetCode Sync
 
-Welcome to my LeetCode Sync repository! This repository contains all the LeetCode programming questions I've solved. It's a comprehensive collection of my journey through LeetCode challenges, showcasing my problem-solving skills and progress.
+
+Welcome to my LeetCode repository! This repository contains all the LeetCode programming questions I've solved. It's a comprehensive collection of my journey through LeetCode challenges, showcasing my problem-solving skills and progress.
 
 ## What every problem consists of
 - [Introduction](#introduction)
@@ -51,9 +51,7 @@ To use the solutions in this repository:
     python problem1.py
     ```
 
-## Technologies Used for solving these problems
-
-## Technologies Used
+## Technologies Used for solving these problems:
 
 - **Python**: The primary programming language used for solving LeetCode problems.
 - **SQL**: Used for solving database-related LeetCode problems.
