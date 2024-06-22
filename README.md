@@ -32,7 +32,7 @@ To use the solutions in this repository:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/leetcode-sync.git
+    git clone https://github.com/husainhakim/Leetcode-Solutions.git
     cd leetcode-sync
     ```
 
