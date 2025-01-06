@@ -1,16 +1,15 @@
 class Solution {
 public:
     bool isSubsequence(string s, string t) {
-        int sp = 0;
-        int tp = 0;
+        string filtered = ""; 
 
-        while (sp < s.length() && tp < t.length()) {
-            if (s[sp] == t[tp]) {
-                sp++;
+        for (char c : t) { 
+            if (!s.empty() && c == s[0]) { 
+                filtered += c; 
+                s.erase(s.begin()); 
             }
-            tp++;
         }
 
-        return sp == s.length();        
+        return s.empty(); 
     }
 };
