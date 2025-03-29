@@ -1,31 +1,38 @@
 class MinStack {
-    private: 
-    stack<int> ogStack, minStack;
+private:
+    stack<long long> st;
+    long long minElement;
+
 public:
-    void push(int val) {
-        ogStack.push(val);
-        // if(minStack.empty())
-        // {
-        //     minStack.push(val);
-        // }
-        // else if (val<minStack.top())
-        // {
-        //     minStack.push(val);
-        // }
-        minStack.push(minStack.empty() ? val: (min(minStack.top(),val)));
+    MinStack() {}
+
+    void push(int value) {
+        if (st.empty()) {
+            st.push(value);
+            minElement = value;
+        } else {
+            if (value < minElement) {
+                st.push(2LL * value - minElement); // Encode min
+                minElement = value;
+            } else {
+                st.push(value);
+            }
+        }
     }
-    
+
     void pop() {
-        ogStack.pop();
-        minStack.pop();
+        if (st.top() < minElement) {
+            minElement = 2 * minElement - st.top(); // Decode previous min
+        }
+        st.pop();
     }
-    
+
     int top() {
-        return ogStack.top();
+        if (st.top() < minElement) return minElement; // Encoded value case
+        return st.top();
     }
-    
+
     int getMin() {
-       return minStack.top(); 
+        return minElement;
     }
 };
-
